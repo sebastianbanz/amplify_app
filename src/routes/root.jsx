@@ -16,7 +16,7 @@ const styles = stylesDark;
     <header className={styles.header}>
       <nav className={styles.nav}>
         <ul className={styles.menu}>
-          <li><Link to={"/"} className={styles.link}>Home</Link></li>
+          <li><Link to={"/home"} className={styles.link}>Home</Link></li>
           <li><Link to={"/info"} className={styles.link}>Info</Link></li>
           <li><Link to={"/experiences"} className={styles.link}>Experiences</Link></li>
         </ul>

@@ -6,6 +6,7 @@ import Root from "./routes/root"
 import Error from "./routes/error"
 import Catty from './routes/Info';
 import Experiences from './routes/Experiences';
+import Home from './routes/Home';
 
 
 const router = createBrowserRouter([
@@ -14,7 +15,12 @@ const router = createBrowserRouter([
     element: <Root/>,
     errorElement: <Error/>,
     children: [
-    
+      {
+
+        path: "/home",
+        element: <Home />
+
+      },
       {
 
         path: "/info",

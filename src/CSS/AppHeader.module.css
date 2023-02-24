@@ -42,4 +42,11 @@
   .link:hover {
     background-color: #444;
   }
+
+  .img
+  {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1;
+  }
   
