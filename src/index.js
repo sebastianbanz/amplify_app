@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter , RouterProvider} from "react-router-dom";
 import Root from "./routes/root"
 import Error from "./routes/error"
-import Catty from './routes/image';
+import Catty from './routes/Info';
+import Experiences from './routes/Experiences';
 
 
 const router = createBrowserRouter([
@@ -19,7 +20,13 @@ const router = createBrowserRouter([
         path: "/info",
         element: <Catty />
 
-      }
+      },
+      {
+
+        path: "/experiences",
+        element: <Experiences />
+
+      },
     ]
   },
 ]);
