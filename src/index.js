@@ -1,10 +1,31 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Root from './routes/root.jsx';
+import { createBrowserRouter , RouterProvider} from "react-router-dom";
+import Root from "./routes/root"
+import Error from "./routes/error"
+import Catty from './routes/image';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root/>,
+    errorElement: <Error/>,
+    children: [
+    
+      {
+
+        path: "/info",
+        element: <Catty />
+
+      }
+    ]
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Root />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
