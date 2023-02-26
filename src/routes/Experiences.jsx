@@ -6,7 +6,7 @@ export default function Experiences() {
     return (
         <>
             <div>
-                <h1> experience these nuts </h1>
+                <h1> swag </h1>
             </div>
 
             <div><Outlet /></div>
