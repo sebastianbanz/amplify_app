@@ -13,7 +13,7 @@ export default function catty() {
 
         <div>
             <h1> hiee</h1>
-            <img src={cat} className={style.img} />
+            <img fetchpriority="high" src={cat} className={style.img} />
         </div>
 
         <div><Outlet /></div>

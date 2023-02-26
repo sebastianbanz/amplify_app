@@ -6,7 +6,7 @@
     
     ,"configurations": [
         {
-            "preLaunchTask": "npmstart", // The name of the task defined above
+            "preLaunchTask": "npmstart",
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
