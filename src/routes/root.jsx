@@ -23,6 +23,10 @@ const styles = stylesDark;
       </nav>
     </header>
 
+  <div>
+    <h1 className={styles.warning}> Your IP has been logged and we are sending a thermonuclear warhead to your location </h1>
+  </div>
+
     <div>
       <Outlet />
     </div>
